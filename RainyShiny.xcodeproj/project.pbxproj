@@ -14,6 +14,8 @@
 		F12C8BC61E6DFBC80058C161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12C8BC41E6DFBC80058C161 /* LaunchScreen.storyboard */; };
 		F12C8BD11E6DFBC80058C161 /* RainyShinyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C8BD01E6DFBC80058C161 /* RainyShinyTests.swift */; };
 		F12C8BDC1E6DFBC80058C161 /* RainyShinyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C8BDB1E6DFBC80058C161 /* RainyShinyUITests.swift */; };
+		F12C8BEA1E7340770058C161 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C8BE91E7340770058C161 /* Constants.swift */; };
+		F12C8BEC1E73456A0058C161 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12C8BEB1E73456A0058C161 /* CurrentWeather.swift */; };
 		F58EE07E963DFB46C7A5CA53 /* Pods_RainyShiny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574BCFF3940FA7A41482898E /* Pods_RainyShiny.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		F12C8BD71E6DFBC80058C161 /* RainyShinyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainyShinyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12C8BDB1E6DFBC80058C161 /* RainyShinyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyShinyUITests.swift; sourceTree = "<group>"; };
 		F12C8BDD1E6DFBC80058C161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12C8BE91E7340770058C161 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F12C8BEB1E73456A0058C161 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				F12C8BBB1E6DFBC80058C161 /* AppDelegate.swift */,
+				F12C8BEB1E73456A0058C161 /* CurrentWeather.swift */,
+				F12C8BE91E7340770058C161 /* Constants.swift */,
 				F12C8BBD1E6DFBC80058C161 /* WeatherVC.swift */,
 				F12C8BBF1E6DFBC80058C161 /* Main.storyboard */,
 				F12C8BC21E6DFBC80058C161 /* Assets.xcassets */,
@@ -339,6 +345,8 @@
 			files = (
 				F12C8BBE1E6DFBC80058C161 /* WeatherVC.swift in Sources */,
 				F12C8BBC1E6DFBC80058C161 /* AppDelegate.swift in Sources */,
+				F12C8BEC1E73456A0058C161 /* CurrentWeather.swift in Sources */,
+				F12C8BEA1E7340770058C161 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
