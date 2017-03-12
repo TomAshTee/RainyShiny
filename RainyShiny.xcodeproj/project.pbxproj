@@ -117,10 +117,11 @@
 		F12C8BBA1E6DFBC80058C161 /* RainyShiny */ = {
 			isa = PBXGroup;
 			children = (
+				F12C8BF01E74197D0058C161 /* Utilities */,
+				F12C8BEF1E7419760058C161 /* Constroler */,
+				F12C8BEE1E74196F0058C161 /* View */,
+				F12C8BED1E7419680058C161 /* Model */,
 				F12C8BBB1E6DFBC80058C161 /* AppDelegate.swift */,
-				F12C8BEB1E73456A0058C161 /* CurrentWeather.swift */,
-				F12C8BE91E7340770058C161 /* Constants.swift */,
-				F12C8BBD1E6DFBC80058C161 /* WeatherVC.swift */,
 				F12C8BBF1E6DFBC80058C161 /* Main.storyboard */,
 				F12C8BC21E6DFBC80058C161 /* Assets.xcassets */,
 				F12C8BC41E6DFBC80058C161 /* LaunchScreen.storyboard */,
@@ -145,6 +146,37 @@
 				F12C8BDD1E6DFBC80058C161 /* Info.plist */,
 			);
 			path = RainyShinyUITests;
+			sourceTree = "<group>";
+		};
+		F12C8BED1E7419680058C161 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F12C8BE91E7340770058C161 /* Constants.swift */,
+				F12C8BEB1E73456A0058C161 /* CurrentWeather.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F12C8BEE1E74196F0058C161 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F12C8BEF1E7419760058C161 /* Constroler */ = {
+			isa = PBXGroup;
+			children = (
+				F12C8BBD1E6DFBC80058C161 /* WeatherVC.swift */,
+			);
+			name = Constroler;
+			sourceTree = "<group>";
+		};
+		F12C8BF01E74197D0058C161 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		F1D0447EC26AF9C0173EE797 /* Frameworks */ = {
