@@ -8,13 +8,27 @@
 
 import Foundation
 
-let BASE_URL = "http://samples.openweathermap.org/data/2.5/weather?"
+let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 let LATITUDE = "lat="
 let LONGITUDE = "&lon="
 let APP_ID = "&appid="
-let API_KEY = "b1b15e88fa797225412429c1c50c122a1"
+let API_KEY = "bda14e74e201fbb04093e12da660be76"
 
 typealias DownloadComplete = () -> ()
 
-let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)-36\(LONGITUDE)123\(APP_ID)\(API_KEY)"
+let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)50.14\(LONGITUDE)18.97\(APP_ID)\(API_KEY)"
 
+//Do poprawienia
+let FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=50.14&lon=18.97&cnt=10&appid=bda14e74e201fbb04093e12da660be76"
+
+func KalwinToCelsius(kalwin: Double) -> (Double) {
+    return (kalwin - 273.15)
+}
+
+extension Date {
+    func dayOfTheWeek() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE"
+        return dateFormatter.string(from: self)
+    }
+}
