@@ -19,11 +19,11 @@ class WeatherCell: UITableViewCell {
     
     func configureCell(forecast: Forecast){
         
-        lowTemp.text = forecast.lowTemp
+        lowTemp.text = forecast.date
         highTemp.text = forecast.highTemp
-        weatherType.text = forecast.weatherTemp
+        weatherType.text = forecast.weatherType
         dayLabel.text = forecast.date
-        weatherIcon.image = UIImage(named: "\(forecast.weatherTemp) Mini")
+        weatherIcon.image = UIImage(named: "\(forecast.weatherType) Mini")
         
     }
 

@@ -13,7 +13,7 @@ class CurrentWeather {
     private var _cityName: String!
     private var _date: String!
     private var _weatherType: String!
-    private var _currentTemp: Double!
+    private var _currentTemp: String!
     
     public var cityName: String {
         if _cityName == nil {
@@ -40,9 +40,9 @@ class CurrentWeather {
         }
         return _weatherType
     }
-    public var currentTemp: Double {
+    public var currentTemp: String {
         if _currentTemp == nil {
-            _currentTemp = 0.0
+            _currentTemp = ""
         }
         return _currentTemp
     }
@@ -61,7 +61,7 @@ class CurrentWeather {
                 }
                 if let main = dict["main"] as? Dictionary<String, Any> {
                     if let currentTemp = main["temp"] as? Double {
-                        self._currentTemp = KalwinToCelsius(kalwin: currentTemp)
+                        self._currentTemp = "\(String(format: "%.0f", KalwinToCelsius(kalwin: currentTemp)))°C"
                     }
                 }
             }

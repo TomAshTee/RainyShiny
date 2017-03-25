@@ -11,30 +11,30 @@ import Alamofire
 
 class Forecast {
     
-    private var _data: String!
+    private var _date: String!
     private var _weatherType: String!
     private var _highTemp: String!
     private var _lowTemp: String!
     
-    var date: String {
-        if _data == nil {
-            _data = ""
+    public var date: String {
+        if _date == nil {
+            _date = ""
         }
-        return _data
+        return _date
     }
-    var weatherTemp: String {
+    public var weatherType: String {
         if _weatherType == nil {
             _weatherType = ""
         }
         return _weatherType
     }
-    var highTemp: String {
+    public var highTemp: String {
         if _highTemp == nil {
             _highTemp = ""
         }
         return _highTemp
     }
-    var lowTemp: String {
+    public var lowTemp: String {
         if _lowTemp == nil {
             _lowTemp = ""
         }
@@ -62,7 +62,7 @@ class Forecast {
             dateFormatter.dateStyle = .full
             dateFormatter.dateFormat = "EEEE"
             dateFormatter.timeStyle = .none
-            self._data = unixConvertedDate.dayOfTheWeek().capitalized
+            self._date = unixConvertedDate.dayOfTheWeek().capitalized
         }
     }
 }
