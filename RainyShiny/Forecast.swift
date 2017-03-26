@@ -45,10 +45,10 @@ class Forecast {
         
         if let temp = weatherDict["temp"] as? Dictionary<String, Any> {
             if let min = temp["min"] as? Double {
-                self._lowTemp = "\(String(format: "%.1f", KalwinToCelsius(kalwin: min)))°C"
+                self._lowTemp = "\(String(format: "%.0f", KalwinToCelsius(kalwin: min)))°C"
             }
             if let max = temp["max"] as? Double {
-                self._highTemp = "\(String(format: "%.1f", KalwinToCelsius(kalwin: max)))°C"
+                self._highTemp = "\(String(format: "%.0f", KalwinToCelsius(kalwin: max)))°C"
             }
         }
         if let weather = weatherDict["weather"] as? [Dictionary<String, Any>] {
