@@ -55,8 +55,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
             currentLocation = locationManager.location
             Location.sharedInstance.latitude = currentLocation.coordinate.latitude
             Location.sharedInstance.longitude = currentLocation.coordinate.longitude
-            print(Location.sharedInstance.latitude, Location.sharedInstance.longitude)
-            print(CURRENT_WEATHER_URL)
+            //print(Location.sharedInstance.latitude, Location.sharedInstance.longitude)
+            //print(CURRENT_WEATHER_URL)
             self.currentWeather.downloadWeatherDetails {
                 //Code to update UI
                 self.downloadForecastData {
@@ -86,6 +86,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     
     func downloadForecastData(completed: @escaping DownloadComplete){
         Alamofire.request(FORECAST_URL).responseJSON { response in
+            //print(response.result.value!)
             if let dict = response.result.value as? Dictionary<String, Any> {
                 if let list = dict["list"] as? [Dictionary<String, Any>] {
                     for obj in list {
