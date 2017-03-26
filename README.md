@@ -8,5 +8,5 @@
 <li><span style="color: #333333;">Alamofire 4.4.0</span></li>
 <li><span style="color: #333333;">OpenWeatherMap API</span></li>
 </ul>
-<img src="https://github.com/TomAshTee/RainyShiny/blob/master/2017-03-18%2015.25.01.png" alt="mainMenu" width="270" height="480"> 
+<img src="https://github.com/TomAshTee/RainyShiny/blob/master/2017-03-26%2023.04.36.png" alt="mainMenu" width="270" height="480"> 
 <p><strong>&nbsp;</strong></p>
