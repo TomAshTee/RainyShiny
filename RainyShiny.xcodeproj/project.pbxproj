@@ -18,6 +18,7 @@
 		F13257C41E7CA1590026C005 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13257C31E7CA1590026C005 /* WeatherCell.swift */; };
 		F17A6DFB1E7BFCFC00737694 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A6DFA1E7BFCFC00737694 /* Forecast.swift */; };
 		F17A6DFD1E7C097900737694 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17A6DFC1E7C097900737694 /* CurrentWeather.swift */; };
+		F1AE81D01E87EA0C007587BB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AE81CF1E87EA0C007587BB /* Location.swift */; };
 		F58EE07E963DFB46C7A5CA53 /* Pods_RainyShiny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574BCFF3940FA7A41482898E /* Pods_RainyShiny.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		F13257C31E7CA1590026C005 /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		F17A6DFA1E7BFCFC00737694 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		F17A6DFC1E7C097900737694 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		F1AE81CF1E87EA0C007587BB /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				F12C8BE91E7340770058C161 /* Constants.swift */,
 				F17A6DFC1E7C097900737694 /* CurrentWeather.swift */,
 				F17A6DFA1E7BFCFC00737694 /* Forecast.swift */,
+				F1AE81CF1E87EA0C007587BB /* Location.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				F12C8BBC1E6DFBC80058C161 /* AppDelegate.swift in Sources */,
 				F12C8BEA1E7340770058C161 /* Constants.swift in Sources */,
 				F17A6DFB1E7BFCFC00737694 /* Forecast.swift in Sources */,
+				F1AE81D01E87EA0C007587BB /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

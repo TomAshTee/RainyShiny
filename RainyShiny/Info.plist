@@ -26,10 +26,12 @@
 		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>samples.openweathermap.org</key>
+			<key>api.openweathermap.org</key>
 			<string></string>
 		</dict>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need you location to give you relevent, up-to-date weather information.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

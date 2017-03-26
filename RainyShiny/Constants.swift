@@ -16,10 +16,10 @@ let API_KEY = "bda14e74e201fbb04093e12da660be76"
 
 typealias DownloadComplete = () -> ()
 
-let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)50.14\(LONGITUDE)18.97\(APP_ID)\(API_KEY)"
+let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)\(Location.sharedInstance.latitude!)\(LONGITUDE)\(Location.sharedInstance.longitude!)\(APP_ID)\(API_KEY)"
 
 //Do poprawienia
-let FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=50.14&lon=18.97&cnt=10&appid=bda14e74e201fbb04093e12da660be76"
+let FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=\(Location.sharedInstance.latitude!)&lon=\(Location.sharedInstance.longitude!)&cnt=10&appid=bda14e74e201fbb04093e12da660be76"
 
 func KalwinToCelsius(kalwin: Double) -> (Double) {
     return (kalwin - 273.15)
