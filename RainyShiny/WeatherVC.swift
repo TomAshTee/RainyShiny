@@ -19,6 +19,12 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
     @IBOutlet weak var currentWeatherTypeLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet var constraintHeroBannerHeight: NSLayoutConstraint!
+    
+    var defaultBannerHeight:CGFloat = 0
+    var minimumBannerHeight:CGFloat = 0
+
+    
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation!
     
@@ -34,7 +40,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         locationManager.requestWhenInUseAuthorization()
         locationManager.startMonitoringSignificantLocationChanges()
         
-        
+        defaultBannerHeight = constraintHeroBannerHeight.constant
+        minimumBannerHeight = 100
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -106,7 +113,16 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, C
         self.locationLabel.text = self.currentWeather.cityName
         self.currentWeatherTypeLabel.text = self.currentWeather.weatherType
         self.currentWeatherImage.image = UIImage(named: self.currentWeather.weatherType)
+        print("<Current Weather Type> \(self.currentWeather.weatherType)")
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let offset = scrollView.contentOffset;
+        if offset.y < minimumBannerHeight {
+            constraintHeroBannerHeight.constant = defaultBannerHeight - offset.y
+        }
     }
     
 }
